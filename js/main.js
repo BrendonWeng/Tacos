@@ -103,16 +103,31 @@
 	/*---------------------------------------------------- */
 	/*	Masonry
 	------------------------------------------------------ */
-	var containerProjects = $('#food-wrapper');
+	var containerProjectsFood = $('#food-wrapper');
 
-	containerProjects.imagesLoaded( function() {
+    containerProjectsFood.imagesLoaded( function() {
 
-		containerProjects.masonry( {		  
+        containerProjectsFood.masonry( {		  
 		  	itemSelector: '.food-item',
 		  	resize: true 
 		});
 
-	});
+    });
+
+
+    /*---------------------------------------------------- */
+	/*	Masonry2
+	------------------------------------------------------ */
+    var containerProjectsSights = $('#sights-wrapper');
+
+    containerProjectsSights.imagesLoaded(function () {
+
+        containerProjectsSights.masonry({
+            itemSelector: '.sights-item',
+            resize: true
+        });
+
+    });
 
 
 	/*----------------------------------------------------*/
